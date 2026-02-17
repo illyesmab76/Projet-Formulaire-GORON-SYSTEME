@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Force les styles orange sur TOUS les champs MUI */
+.MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+  border-color: #ee773d !important;
+}
+
+.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #ee773d !important;
+  border-width: 2px !important;
+}
+
+.MuiInputLabel-root.Mui-focused {
+  color: #ee773d !important;
+}
+
+/* Spécifique au DatePicker ouvert */
+.datepicker-container-open .MuiOutlinedInput-notchedOutline {
+  border-color: #ee773d !important;
+  border-width: 2px !important;
+}
+
+.datepicker-container-open .MuiInputLabel-root {
+  color: #ee773d !important;
+}
